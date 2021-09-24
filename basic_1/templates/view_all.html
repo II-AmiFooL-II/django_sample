@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Basic 1</title>
+    </head>
+    <body>
+        <h2></h2>
+        <p>all avilable details:</p>
+        {% if  length  == 0 %}
+        <p>no entries</p>
+        {% else %}
+        <table >
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            {% for i in entries %}
+            
+            <tr>
+                <td>{{ i.name }}</td>
+                <td>{{ i.age }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+        <a href="/">add another detail</a><br><br>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Basic 1</title>
+    </head>
+    <body>
+        <h2>HELLOW</h2>
+        <p><h3>enter ur details:</h3></p><br>
+    
+        <form method="POST" action='/submit_form'>
+            {% csrf_token %}
+            <label for="name">name:</label>
+            <input type="text" name="name" placeholder="Ex:raj" required><br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" placeholder="Ex:99" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <a href="/view_all">view all avilable details</a>
+    </body>
+</html>
